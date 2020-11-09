@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Libre Baskerville', serif;
+    padding: 5px;
+}
+
+html {
+    background-image: url("http://127.0.0.1:8080/dbwebb/design/me/portfolio/themes/shared/img/thierry.JPG");
+    background-attachment: fixed;
+    background-position: center right;
+    background-repeat: repeat;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.4);
+    height: 100%;
+    color: #002;
+}
+
+/* Header */
+
+.site-header {
+    flex: 0 0 auto;
+    background-color: #808080;
+    color: #789;
+    padding: 0 2em;
+    background-image: url("http://127.0.0.1:8080/dbwebb/design/me/portfolio/themes/shared/img/caravag.jpg");
+}
+
+.site-header a, .site-header a:visited {
+    color: #789;
+}
+
+.site-header a:hover {
+    color: #fff;
+}
+/* Main */
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+    height: 70%;
+}
+
+/* Footer */
+
+.site-footer {
+    flex: 0 0 auto;
+    background-color: rgba(211, 211, 211, 0.5);
+    color: #000;
+    padding: 2em;
+
+}
+
+.site-footer a {
+    color: #f0f0f0;
+}
