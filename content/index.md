@@ -3,7 +3,7 @@ Title: Home
 Description: This is our index page.
 ---
 
-Välkommen till Martins design kurs sida!
+Välkommen till Martins design kurs sida! 
 ==========================
 
 På denna sida kommer jag jobba med en design kurs!

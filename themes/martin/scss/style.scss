@@ -1,0 +1,78 @@
+@import '../../shared/scss/base';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Libre Baskerville', serif;
+    background-image: url('http://127.0.0.1:8080/dbwebb/design/me/portfolio/themes/shared/img/thierry.JPG');
+    background-attachment: fixed;
+    background-position: center right;
+    background-repeat: repeat;
+    background-color: $black;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $background-gray;
+    height: 100%;
+    color: $light-black;
+}
+
+/* Header */
+
+.site-header {
+    flex: 0 0 auto;
+    background-color: $black;
+    color: $white;
+    padding: 0 2em;
+    background-image: url('http://127.0.0.1:8080/dbwebb/design/me/portfolio/themes/shared/img/caravag.jpg');
+}
+
+.site-header a {
+    color: $my-gray;
+}
+
+.site-header a:visited {
+    color: $my-gray;
+}
+
+.site-header a:hover {
+    color: $white;
+}
+/* Main */
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+    height: 70%;
+}
+
+/* Footer */
+
+.site-footer {
+    flex: 0 0 auto;
+    background-color: $background-gray;
+    color: $black;
+    padding: 1em;
+
+}
+
+.site-footer a {
+    color: $light-black;
+}
