@@ -1,0 +1,152 @@
+@import '../../shared/scss/base';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+.landingpage {
+    display: grid;
+    gap: 2em 2em;
+    max-width: 48em;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.landingpage h1 {
+    justify-self: center;
+    grid-column: span 3;
+    align-items: center;
+    position: relative;
+}
+
+.kmom-box.project {
+    grid-column: span 3;
+    position: relative;
+    margin-top: 2px;
+}
+
+.kmom-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px #515459;
+    background-color: #f5f0f0;
+    border-radius: 3px;
+    border-style: ridge;
+    box-shadow: 1px 1px #002;
+    width: 100%;
+    height: auto;
+}
+
+.kmom-box a {
+    color: $background-gray1;
+    text-decoration: none;
+    background-color: #32334a;
+    width: 100%;
+}
+
+.kmom-box h2 {
+    text-decoration: none;
+    background-color: #32334a;
+    width: 100%;
+    align-self: center;
+}
+
+.kmom-box p {
+    color: #002;
+}
+
+.kmom-container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 1em;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1em;
+}
+
+.kmom-container .sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    justify-content: space-evenly;
+}
+
+.sidebar a {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0.5em;
+    color: #32334a;
+    text-decoration: none;
+}
+
+.fa-arrow-right {
+    display: flex;
+    color: #000;
+    background-color: #f5f0f0;
+    width: 100%;
+    padding: 2px;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+
+.kmom .next-previous {
+    display: none;
+}
+
+.kmom .next-previous a {
+    color: #fff;
+}
+
+@media (max-width: 960px) {
+    body {
+        height: 200%;
+    }
+
+    .main {
+        margin-bottom: 3em;
+    }
+
+    .landingpage {
+        display: grid;
+        margin: 0 auto;
+    }
+
+    .landingpage h1 {
+        position: relative;
+    }
+
+    .kmom-box {
+        grid-column: span 3;
+        align-items: center;
+    }
+
+    .kmom-box p {
+        color: #002;
+        padding-top: 2px;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .kmom-container {
+        grid-template-columns: 12fr;
+    }
+
+    .kmom .next-previous {
+        display: flex;
+        justify-content: center;
+    }
+
+    .kmom .next-previous a {
+        color: #32334a;
+        font-size: 4rem;
+        margin: 1em;
+    }
+}

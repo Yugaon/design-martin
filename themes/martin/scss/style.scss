@@ -4,22 +4,22 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
+@import 'report';
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 
 html {
     font-family: 'Libre Baskerville', serif;
-    background-image: url('http://127.0.0.1:8080/dbwebb/design/me/portfolio/themes/shared/img/thierry.JPG');
+    background-image: url('\assets\img\thierry.JPG');
     background-attachment: fixed;
     background-position: center right;
     background-repeat: repeat;
-    background-color: $black;
+    background-color: $background-gray;
     overflow-y: scroll;
     height: 100%;
 }
@@ -28,13 +28,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: $background-gray;
-    height: 100%;
-    color: $light-black;
+    color: $black;
 }
-
-/* Header */
 
 .site-header {
     flex: 0 0 auto;
@@ -59,20 +54,27 @@ body {
 
 .main {
     flex: 1 0 auto;
-    padding: 2em;
-    height: 70%;
+    position: relative;
+    background-color: $background-gray;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
 
 .site-footer {
-    flex: 0 0 auto;
-    background-color: $background-gray;
+    display: flex;
+    background-color: $background-gray1;
     color: $black;
-    padding: 1em;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-footer a {
     color: $light-black;
+}
+
+.social {
+    font-size: 2rem;
+    padding: 1.5em;
 }
