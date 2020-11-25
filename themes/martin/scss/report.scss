@@ -34,11 +34,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px #515459;
-    background-color: #f5f0f0;
+    border: 4px $silver-gray;
+    background-color: $white-redhue;
     border-radius: 3px;
     border-style: ridge;
-    box-shadow: 1px 1px #002;
+    box-shadow: 1px 1px $black-whiter;
     width: 100%;
     height: auto;
 }
@@ -46,19 +46,19 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 .kmom-box a {
     color: $background-gray1;
     text-decoration: none;
-    background-color: #32334a;
+    background-color: $gray-blue;
     width: 100%;
 }
 
 .kmom-box h2 {
     text-decoration: none;
-    background-color: #32334a;
+    background-color: $gray-blue;
     width: 100%;
     align-self: center;
 }
 
 .kmom-box p {
-    color: #002;
+    color: $black-whiter;
 }
 
 .kmom-container {
@@ -81,14 +81,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     font-size: 1.8em;
     text-align: center;
     padding: 0.5em;
-    color: #32334a;
+    color: $gray-blue;
     text-decoration: none;
 }
 
 .fa-arrow-right {
     display: flex;
-    color: #000;
-    background-color: #f5f0f0;
+    color: $black;
+    background-color: $white-redhue;
     width: 100%;
     padding: 2px;
     justify-content: flex-end;
@@ -100,7 +100,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 }
 
 .kmom .next-previous a {
-    color: #fff;
+    color: $white;
 }
 
 @media (max-width: 960px) {
@@ -127,7 +127,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     }
 
     .kmom-box p {
-        color: #002;
+        color: $black-whiter;
         padding-top: 2px;
     }
 
@@ -145,8 +145,12 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     }
 
     .kmom .next-previous a {
-        color: #32334a;
+        color: $gray-blue;
         font-size: 4rem;
         margin: 1em;
+    }
+
+    .social {
+        font-size: 1rem;
     }
 }

@@ -1,9 +1,17 @@
 $base-color: #00f !default; // blue
 $border-dark: rgba($base-color, 0.88) !default;
 $alert-box-size: 600px !default;
-$my-gray: #789;
-$black: #000;
-$white: #fff;
-$light-black: #002;
-$background-gray: rgba(211, 211, 211, 0.4);
-$background-gray1: rgba(211, 211, 211, 0.6);
+$my-gray: #789 !default;
+$black: #000 !default;
+$white: #fff !default;
+$light-black: rgba(0, 0, 0, 0.8) !default;
+$light-black1: rgba(0, 0, 0, 0.9) !default;
+$background-gray: rgba(211, 211, 211, 0.4) !default;
+$background-gray1: rgba(211, 211, 211, 0.5) !default;
+$background-gray2: rgba(211, 211, 211, 0.8) !default;
+$background-gray3: rgba(211, 211, 211, 0.9) !default;
+$gray-header: #f5f5dc !default;
+$gray-blue: #32334a !default;
+$silver-gray: #515459 !default;
+$white-redhue: #f5f0f0 !default;
+$black-whiter: #002 !default;

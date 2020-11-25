@@ -19,24 +19,28 @@ html {
     background-attachment: fixed;
     background-position: center right;
     background-repeat: repeat;
-    background-color: $background-gray2;
+    background-color: $light-black;
     overflow-y: scroll;
     height: 100%;
-    line-height: 130%;
 }
 
 body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    color: $my-gray;
+}
+
+img {
+    filter: grayscale(100%);
 }
 
 .site-header {
     flex: 0 0 auto;
     background-color: $black;
-    color: $black;
+    color: $white;
     padding: 0 2em;
-    background-image: url('../../../assets/img/caravag_white.jpg');
+    background-image: url('../../../assets/img/caravag.jpg');
 }
 
 .site-header a {
@@ -48,35 +52,48 @@ body {
 }
 
 .site-header a:hover {
-    color: $white;
+    color: $background-gray;
 }
 /* Main */
 
 .main {
     flex: 1 0 auto;
     position: relative;
-    background-color: $background-gray2;
+    background-color: $light-black;
     justify-content: center;
     align-items: center;
-    color: $black;
 }
-
 
 /* Footer */
 
 .site-footer {
     display: flex;
-    background-color: $background-gray3;
-    color: $black;
+    background-color: $light-black1;
+    color: $my-gray;
     justify-content: space-between;
     align-items: center;
 }
 
 .site-footer a {
-    color: $light-black;
+    color: $background-gray;
 }
 
 .social {
+    display: flex;
     font-size: 1.5rem;
     padding: 1.5em;
+}
+
+.kmom-box {
+    background-color: #003;
+    color: $background-gray1;
+}
+
+.kmom-box p {
+    color: $background-gray1;
+}
+
+.fa-arrow-right {
+    background-color: #003;
+    color: $background-gray1;
 }

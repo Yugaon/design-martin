@@ -13074,24 +13074,28 @@ html {
   background-attachment: fixed;
   background-position: center right;
   background-repeat: repeat;
-  background-color: rgba(211, 211, 211, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   overflow-y: scroll;
   height: 100%;
-  line-height: 130%;
 }
 
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  color: #789;
+}
+
+img {
+  filter: grayscale(100%);
 }
 
 .site-header {
   flex: 0 0 auto;
   background-color: #000;
-  color: #000;
+  color: #fff;
   padding: 0 2em;
-  background-image: url("../../../assets/img/caravag_white.jpg");
+  background-image: url("../../../assets/img/caravag.jpg");
 }
 
 .site-header a {
@@ -13103,33 +13107,47 @@ body {
 }
 
 .site-header a:hover {
-  color: #fff;
+  color: rgba(211, 211, 211, 0.4);
 }
 
 /* Main */
 .main {
   flex: 1 0 auto;
   position: relative;
-  background-color: rgba(211, 211, 211, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
-  color: #000;
 }
 
 /* Footer */
 .site-footer {
   display: flex;
-  background-color: rgba(211, 211, 211, 0.9);
-  color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #789;
   justify-content: space-between;
   align-items: center;
 }
 
 .site-footer a {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(211, 211, 211, 0.4);
 }
 
 .social {
+  display: flex;
   font-size: 1.5rem;
   padding: 1.5em;
+}
+
+.kmom-box {
+  background-color: #003;
+  color: rgba(211, 211, 211, 0.5);
+}
+
+.kmom-box p {
+  color: rgba(211, 211, 211, 0.5);
+}
+
+.fa-arrow-right {
+  background-color: #003;
+  color: rgba(211, 211, 211, 0.5);
 }
