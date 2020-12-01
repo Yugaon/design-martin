@@ -19411,7 +19411,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   grid-column: span 3;
 }
