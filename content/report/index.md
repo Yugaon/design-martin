@@ -34,14 +34,14 @@ Redovisningssida för design
 </div>
 
 <div class="kmom-box">
-<a href="report/kmom5"><h2>Kmom05</h2></a>
+  <a href="report/kmom05"><h2>Kmom05</h2></a>
     <p>Bild</p>
     <br>
     <a href="report/kmom05"><i class="fas fa-arrow-right"></i></a>
 </div>
 
 <div class="kmom-box">
-<a href="report/kmom0"><h2>Kmom06</h2></a>
+<a href="report/kmom06"><h2>Kmom06</h2></a>
     <p>Tillgänglighet och prestanda</p>
     <a href="report/kmom06"><i class="fas fa-arrow-right"></i></a>
 </div>

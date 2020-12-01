@@ -1,0 +1,73 @@
+@import '../../shared/scss/base';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+.gallery {
+    display: grid;
+    gap: 2em 2em;
+    max-width: 60em;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.gallery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.gallery h1 {
+    justify-self: center;
+    grid-column: span 3;
+    align-items: center;
+    position: relative;
+}
+
+.gallery-box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    grid-column: span 2;
+}
+
+.gallery-box6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    grid-column: span 3;
+}
+
+@media (max-width: 668px) {
+    body {
+        height: 200%;
+    }
+
+    .gallery-box {
+        grid-column: span 3;
+        align-items: center;
+    }
+
+    .gallery-box4 {
+        grid-column: span 3;
+        align-items: center;
+    }
+
+    .gallery-box6 {
+        grid-column: span 3;
+        align-items: center;
+    }
+
+}

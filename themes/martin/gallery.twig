@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon1.ico">
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}" />
+    {% endif %}
+    {% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}" />
+    {% endif %}
+
+    {% if current_page %}
+        <link rel="canonical" href="{{ current_page.url }}" />
+    {% endif %}
+
+    <!-- <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
+    <!-- Insert font choice here -->
+    {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
+    <!-- End -->
+    {% if config.session.theme == "dark" %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
+    {% else %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {% endif %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/nav.css" type="text/css" />
+
+</head>
+
+<body {% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+    <header class="site-header">
+      <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+        <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
+        <span class="sr-only">Toggle Menu</span>
+    </a>
+    <div id="nav" role="navigation" tabindex="-1">
+        <ul>
+          <i class="fab fa-mixer" style="color: #789"></i>
+            {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+            <li{% if page.id == current_page.id %} class="active" {% endif %}>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+                </li>
+                {% endfor %}
+        </ul>
+    </div>
+    </header>
+      <div class= "main">
+        <div class="gallery">
+          {{content}}
+          <div class="gallery-box">
+            <a href="{{ base_url }}/image/titian_nr1.jpg">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr1.jpg?h=330&w=330">
+                <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr1.jpg?w=280&h=280&crop-to-fit">
+                <img src="{{ base_url }}/image/titian_nr1.jpg?width=280&height=280&crop-to-fit" />
+            </picture>
+            </a>
+          </div>
+
+          <div class="gallery-box">
+            <a href="{{ base_url }}/image/titian_nr2.jpg">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr2.jpg?h=330">
+                <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr2.jpg?w=280&h=280&crop-to-fit">
+                <img src="{{ base_url }}/image/titian_nr2.jpg?w=280&h=280&crop-to-fit" />
+            </picture>
+            </a>
+          </div>
+
+          <div class="gallery-box">
+            <a href="{{ base_url }}/image/titian_nr3.jpg">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr3.jpg?h=330">
+                <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr3.jpg?w=280&h=280&crop-to-fit">
+                <img src="{{ base_url }}/image/titian_nr3.jpg?w=280&h=280&crop-to-fit"/>
+            </picture>
+            </a>
+          </div>
+
+          <div class="gallery-box4">
+            <a href="{{ base_url }}/image/titian_nr4.jpg">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr4.jpg?h=330">
+                <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr4_small.jpg?w=280&h=280&crop-to-fit">
+                <img src="{{ base_url }}/image/titian_nr4_small.jpg?w=280&h=280&crop-to-fit"/>
+            </picture>
+            </a>
+          </div>
+
+          <div class="gallery-box">
+            <a href="{{ base_url }}/image/titian_nr5.jpg">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr5.jpg?h=330">
+                <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr5.jpg?w=280&h=280&crop-to-fit">
+                <img src="{{ base_url }}/image/titian_nr5.jpg?w=280&h=280&crop-to-fit"  />
+            </picture>
+            </a>
+          </div>
+
+          <div class="gallery-box6">
+            <a href="{{ base_url }}/image/titian_nr6.jpg">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr6.jpg">
+                <source media="(max-width: 667px)" srcset="{{ base_url }}/image/titian_nr6_small.jpg?w=280&h=280&crop-to-fit">
+                <img src="{{ base_url }}/image/titian_nr6_small.jpg?w=280&h=280&crop-to-fit" alt="picture of Martin Guva edited" />
+            </picture>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    <footer class="site-footer">
+        <p>Klicka på ikonerna för att komma till github repot och min instagram!</p>
+        <div class="social">
+          {% for social in pages["_meta"].meta.social %}
+            <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+              <i class="{{ social.icon }}"  aria-hidden="true"></i>
+              <span class="sr-only">{{ social.title }}</span>
+            </a>
+            {% endfor %}
+            {% for social2 in pages["_meta"].meta.social2 %}
+                <a href="{{ social2.url }}" title="{{ social2.title }}" role="button">
+                    <i class="{{ social2.icon }}" aria-hidden="true"></i>
+                    <span class="sr-only">{{ social2.title }}</span>
+                </a>
+            {% endfor %}
+          </div>
+            <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+    </footer>
+    <script src="{{ theme_url }}/../shared/js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared/js/utils.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared/js/responsive-navbar.js" type="text/javascript"></script>
+</body>

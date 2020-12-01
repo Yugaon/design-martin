@@ -4,6 +4,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
+@import 'gallery';
 
 .landingpage {
     display: grid;
@@ -103,6 +104,22 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     color: $white;
 }
 
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe object embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 960px) {
     body {
         height: 200%;
@@ -140,7 +157,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     }
 
     .kmom .next-previous {
-        display: flex;
+        display: none !important;
         justify-content: center;
     }
 
@@ -148,9 +165,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
         color: $gray-blue;
         font-size: 4rem;
         margin: 1em;
+        display: none !important;
     }
 
     .social {
         font-size: 1rem;
     }
+
 }

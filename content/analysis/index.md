@@ -16,7 +16,7 @@ Redovisningssida för design
 
 <div class="kmom-box">
 <a href="analysis/kmom05-report"><h2>Kmom05 Rapport</h2></a>
-    <p>Kmom05 Rapport</p>
+    <p>Bild Rapport</p>
     <a href="analysis/kmom05-report"><i class="fas fa-arrow-right"></i></a>
 </div>
 

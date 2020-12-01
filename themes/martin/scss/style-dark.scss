@@ -35,6 +35,10 @@ img {
     filter: grayscale(100%);
 }
 
+img embed object video {
+    max-width: 100%;
+}
+
 .site-header {
     flex: 0 0 auto;
     background-color: $black;

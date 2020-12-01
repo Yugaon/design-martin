@@ -52,9 +52,9 @@
         <div class="container">
           {{content}}
           {% if config.session.theme == "dark" %}
-          <img src="assets/img/dietmartin-black.jpg" width="300" height="280" alt="picture of Martin Guva edited" />
+          <img src="{{ assets_url }}/img/dietmartin-black.jpg" width="300" height="280" alt="picture of Martin Guva edited" />
           {% else %}
-          <img src="assets/img/dietmartin.JPG" width="300" height="280" alt="picture of Martin Guva edited" />
+          <img src="{{ assets_url }}/img/dietmartin.JPG" width="300" height="280" alt="picture of Martin Guva edited"/>
           {% endif %}
         </div>
     </div>
