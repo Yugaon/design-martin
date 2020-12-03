@@ -26160,11 +26160,11 @@ img embed object video {
 }
 
 .site-header a {
-  color: rgba(211, 211, 211, 0.8);
+  color: #f5f0f0;
 }
 
 .site-header a:visited {
-  color: rgba(211, 211, 211, 0.8);
+  color: #f5f0f0;
 }
 
 .site-header a:hover {
@@ -26229,6 +26229,10 @@ img embed object video {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.analys-container {
+  width: 70%;
 }
 
 @media (max-width: 960px) {

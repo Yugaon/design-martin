@@ -29,17 +29,21 @@ Hur webbplatserna kan förbättra sig:
 
 ## Apple
 
-Apples sida laddade väldigt fort och det kändes verkligen som det var snabbt och smidigt. Till skillnad ifrån de andra sidorna är apples hemsida mycket mer simpel och stilren och det passar med deras märke. Det problemet som apples sida verkar ha är First Contentful Paint, vilket är det första en person ser när de besöker en hemsida, vilket i detta fall tar lång tid att ladda, efter gjort lite egen forskning är ett sätt att göra så att det laddar fortare är att flytta vissa element ifrån head till andra delar eftersom head delen laddas absolut först och på det sättet går det snabbare för man behöver ladda in mindre saker i början.
+Apples sida laddade väldigt fort och det kändes verkligen som det var snabbt och smidigt. Till skillnad ifrån de andra sidorna är apples hemsida mycket mer simpel och stilren och det passar med deras märke. Det problemet som apples sida verkar ha är First Contentful Paint, vilket är det första en person ser när de besöker en hemsida, vilket i detta fall tar lång tid att ladda, efter gjort lite egen forskning är ett sätt att göra så att det laddar fortare är att flytta vissa element ifrån head till andra delar eftersom head delen laddas absolut först och på det sättet går det snabbare för man behöver ladda in mindre saker i början.  
+<img src="../assets/img/apple_screenshot.png" width="1000" height="500" alt="Bild av Apples hemsida" />
+
 
 ## Amazon
 
 Amazons sida tog relativ lång tid att ladda, det är  extremt mycket olika saker som händer på en gång när man laddar sidan och man känner sig nästan lite överrumplad. Dock så vill dem visa att dem har många saker att erbjuda en så jag kan förstå varför dem har valt att göra så. Det som amazon verkar ha problem med mest var Cumulative Layout Shift. Vilket mäter när element på sidan ändra ifrån ingenstans, det kan bero på element som laddas in sent så som en bild eller video som har okända dimensioner.  
-Efter att ha gjort lite egen forskning så sätt man kan lösa detta på är att alltid ha med storlekar på sina bilder och filmer så att den tar redan upp så mycket plats även fast själva filmen inte laddar just först.
+Efter att ha gjort lite egen forskning så sätt man kan lösa detta på är att alltid ha med storlekar på sina bilder och filmer så att den tar redan upp så mycket plats även fast själva filmen inte laddar just först.  
+<img src="../assets/img/amazon_screenshot.png" width="1000" height="500" alt="Bild av Amazons hemsida" />
 
 
 ## Twitch
 
-Twitch sida tog extremt lång tid på sig att ladda. Dock är det väldigt förståeligt, det är en streaming service för spel så för att locka personer att kolla vill dem att man direkt ska klicka på en video som streamas på förstasidan så därför laddas många live-streams in på en gång. Därför tar sidan så lång tid att ladda. Det verkar som twitch största problem är Largest Contentful Paint. Det verkar även som att sidan har mycket Javascript som inte används så det skulle man kunna ta bort och optimizera för att göra så att laddningen går fortare.
+Twitch sida tog extremt lång tid på sig att ladda. Dock är det väldigt förståeligt, det är en streaming service för spel så för att locka personer att kolla vill dem att man direkt ska klicka på en video som streamas på förstasidan så därför laddas många live-streams in på en gång. Därför tar sidan så lång tid att ladda. Det verkar som twitch största problem är Largest Contentful Paint. Det verkar även som att sidan har mycket Javascript som inte används så det skulle man kunna ta bort och optimizera för att göra så att laddningen går fortare.  
+<img src="../assets/img/twitch_screenshot.png" width="1000" height="500" alt="Bild av Twitchs hemsida" />
 
 Analys
 -----------------------
