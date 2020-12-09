@@ -19642,11 +19642,11 @@ img embed object video {
 }
 
 .site-header a {
-  color: rgba(211, 211, 211, 0.8);
+  color: #f5f0f0;
 }
 
 .site-header a:visited {
-  color: rgba(211, 211, 211, 0.8);
+  color: #f5f0f0;
 }
 
 .site-header a:hover {
@@ -19660,6 +19660,14 @@ img embed object video {
   background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.analys-container {
+  width: 70%;
 }
 
 /* Footer */
@@ -19682,15 +19690,15 @@ img embed object video {
 }
 
 .kmom-box {
-  background-color: #003;
+  background-color: #004;
   color: rgba(211, 211, 211, 0.5);
 }
 
 .kmom-box p {
-  color: rgba(211, 211, 211, 0.5);
+  color: #789;
 }
 
 .fa-arrow-right {
-  background-color: #003;
+  background-color: #004;
   color: rgba(211, 211, 211, 0.5);
 }

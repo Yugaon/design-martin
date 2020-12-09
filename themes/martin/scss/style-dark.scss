@@ -48,11 +48,11 @@ img embed object video {
 }
 
 .site-header a {
-    color: $background-gray2;
+    color: $white-redhue;
 }
 
 .site-header a:visited {
-    color: $background-gray2;
+    color: $white-redhue;
 }
 
 .site-header a:hover {
@@ -66,6 +66,14 @@ img embed object video {
     background-color: $light-black;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.analys-container {
+    width: 70%;
 }
 
 /* Footer */
@@ -89,15 +97,15 @@ img embed object video {
 }
 
 .kmom-box {
-    background-color: #003;
+    background-color: #004;
     color: $background-gray1;
 }
 
 .kmom-box p {
-    color: $background-gray1;
+    color: $my-gray;
 }
 
 .fa-arrow-right {
-    background-color: #003;
+    background-color: #004;
     color: $background-gray1;
 }

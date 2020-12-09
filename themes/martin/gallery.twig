@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
+<html lang="sv">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,13 +33,12 @@
 
 <body {% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <header class="site-header">
-      <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+      <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="0">
         <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
         <span class="sr-only">Toggle Menu</span>
     </a>
     <div id="nav" role="navigation" tabindex="-1">
         <ul>
-          <i class="fab fa-mixer" style="color: #789"></i>
             {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
             <li{% if page.id == current_page.id %} class="active" {% endif %}>
                 <a href="{{ page.url }}">{{ page.title }}</a>
@@ -51,61 +51,61 @@
         <div class="gallery">
           {{content}}
           <div class="gallery-box">
-            <a href="{{ base_url }}/image/titian_nr1.jpg">
+            <a href="{{ base_url }}/image/titian_nr1.jpg" aria-label="The allegory of prudence målning av Titian">
             <picture>
                 <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr1.jpg?h=330&w=330">
                 <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr1.jpg?w=280&h=280&crop-to-fit">
-                <img src="{{ base_url }}/image/titian_nr1.jpg?width=280&height=280&crop-to-fit" />
+                <img src="{{ base_url }}/image/titian_nr1.jpg?width=280&height=280&crop-to-fit" alt="The allegory of prudence målning av Titian" />
             </picture>
             </a>
           </div>
 
           <div class="gallery-box">
-            <a href="{{ base_url }}/image/titian_nr2.jpg">
+            <a href="{{ base_url }}/image/titian_nr2.jpg" aria-label="Mary Magdalene målning av Titian">
             <picture>
                 <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr2.jpg?h=330">
                 <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr2.jpg?w=280&h=280&crop-to-fit">
-                <img src="{{ base_url }}/image/titian_nr2.jpg?w=280&h=280&crop-to-fit" />
+                <img src="{{ base_url }}/image/titian_nr2.jpg?w=280&h=280&crop-to-fit" alt="Mary Magdalene målning av Titian" />
             </picture>
             </a>
           </div>
 
           <div class="gallery-box">
-            <a href="{{ base_url }}/image/titian_nr3.jpg">
+            <a href="{{ base_url }}/image/titian_nr3.jpg" aria-label="Self-portrait (Madrid) målning av Titian">
             <picture>
                 <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr3.jpg?h=330">
                 <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr3.jpg?w=280&h=280&crop-to-fit">
-                <img src="{{ base_url }}/image/titian_nr3.jpg?w=280&h=280&crop-to-fit"/>
+                <img src="{{ base_url }}/image/titian_nr3.jpg?w=280&h=280&crop-to-fit" alt="Self-portrait (Madrid) av Titian"/>
             </picture>
             </a>
           </div>
 
           <div class="gallery-box4">
-            <a href="{{ base_url }}/image/titian_nr4.jpg">
+            <a href="{{ base_url }}/image/titian_nr4.jpg" aria-label="The rape of Europa målning av Titian">
             <picture>
                 <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr4.jpg?h=330">
                 <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr4_small.jpg?w=280&h=280&crop-to-fit">
-                <img src="{{ base_url }}/image/titian_nr4_small.jpg?w=280&h=280&crop-to-fit"/>
+                <img src="{{ base_url }}/image/titian_nr4_small.jpg?w=280&h=280&crop-to-fit" alt="The rape of Europa målning av Titian"/>
             </picture>
             </a>
           </div>
 
           <div class="gallery-box">
-            <a href="{{ base_url }}/image/titian_nr5.jpg">
+            <a href="{{ base_url }}/image/titian_nr5.jpg" aria-label="St Margaret and the Dragon målning av Titian">
             <picture>
                 <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr5.jpg?h=330">
                 <source media="(min-width: 667px)" srcset="{{ base_url }}/image/titian_nr5.jpg?w=280&h=280&crop-to-fit">
-                <img src="{{ base_url }}/image/titian_nr5.jpg?w=280&h=280&crop-to-fit"  />
+                <img src="{{ base_url }}/image/titian_nr5.jpg?w=280&h=280&crop-to-fit" alt="St Margaret and the Dragon målning av Titian" />
             </picture>
             </a>
           </div>
 
           <div class="gallery-box6">
-            <a href="{{ base_url }}/image/titian_nr6.jpg">
+            <a href="{{ base_url }}/image/titian_nr6.jpg" aria-label="Venus and the Lute Player målning av Titian">
             <picture>
                 <source media="(min-width: 668px)" srcset="{{ base_url }}/image/titian_nr6.jpg?w=959.99&h=543.8">
                 <source media="(max-width: 667px)" srcset="{{ base_url }}/image/titian_nr6_small.jpg?w=280&h=280&crop-to-fit">
-                <img src="{{ base_url }}/image/titian_nr6_small.jpg?w=280&h=280&crop-to-fit" alt="picture of Martin Guva edited" />
+                <img src="{{ base_url }}/image/titian_nr6_small.jpg?w=280&h=280&crop-to-fit" alt="Venus and the Lute Player målning av Titian" />
             </picture>
             </a>
           </div>
