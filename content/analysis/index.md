@@ -25,3 +25,15 @@ Redovisningssida för design
     <p>Desgin Rapport</p>
     <a href="analysis/kmom06-report" aria-label="Rapport kmom 06"><i class="fas fa-arrow-right"></i></a>
 </div>
+
+<div class="kmom-box">
+<a href="analysis/kmom10-report" aria-label="Rapport kmom 10"><h2>Kmom10 Rapport</h2></a>
+    <p>Projekt rapport trender</p>
+    <a href="analysis/kmom10-report" aria-label="Rapport kmom 10"><i class="fas fa-arrow-right"></i></a>
+</div>
+
+<div class="kmom-box">
+<a href="analysis/kmom11-report" aria-label="Rapport kmom 11"><h2>Kmom10 Rapport</h2></a>
+    <p>Projekt rapport själv-analys</p>
+    <a href="analysis/kmom11-report" aria-label="Rapport kmom 11"><i class="fas fa-arrow-right"></i></a>
+</div>
